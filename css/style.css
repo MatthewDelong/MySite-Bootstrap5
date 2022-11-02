@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "diranista";
+    src: url(/fonts/DiranistaRegular.ttf);
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    font-family: "diranista", sans-serif;
+}
+
+h5 {
+    font-family: "diranista", sans-serif;
+}
+
+.canva {
+    background: linear-gradient( 0deg, rgba(0, 0, 0, 1) 0%, rgba(7, 7, 161, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.offcanvas {
+    background: rgba(23, 23, 66);
+}
+
+.btn-close:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler {
+    font-size: 40px;
+    color: white;
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    color: white;
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.navbar-brand:hover {
+    color: white;
+}
+
+.navbar-nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.5s;
+}
+
+.navbar-nav a:hover {
+    color: rgba(103, 230, 236);
+}
+
+.btn1 {
+    height: 45px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgba(28, 31, 56, 0.657);
+    font-weight: 500;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn1 ::before,
+.btn1 ::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+}
+
+.btn1 ::after {
+    height: 0;
+    top: 0;
+    left: 0;
+    transition-duration: 0.6s;
+    width: 100%;
+}
+
+.btn1:hover ::after {
+    height: 100%;
+    background: rgba(72, 74, 102, 0.657);
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 4rem;
+}
+
+.content p {
+    font-size: 1rem;
+}
+
+.content input {
+    height: 65px;
+    width: 70%;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
