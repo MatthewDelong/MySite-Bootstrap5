@@ -85,6 +85,7 @@ h5 {
     z-index: 1;
     position: relative;
     overflow: hidden;
+    padding: 6px;
 }
 
 .btn1 ::before,
