@@ -134,3 +134,18 @@ h5 {
     outline: none;
     border: none;
 }
+
+.text-gallery {
+    position: relative;
+    color: red;
+}
+
+.text-gallery::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    color: rgb(2, 2, 172);
+}
