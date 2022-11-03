@@ -30,10 +30,6 @@ html {
     height: 100%;
 }
 
-img {
-    width: 100%;
-}
-
 .canva {
     background: linear-gradient( 0deg, rgba(0, 0, 0, 1) 0%, rgba(7, 7, 161, 1) 50%, rgba(0, 0, 0, 1) 100%);
     background-size: cover;
