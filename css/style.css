@@ -18,8 +18,20 @@ h1 {
     font-family: "diranista", sans-serif;
 }
 
+h2 {
+    font-family: "Poppins", sans-serif;
+}
+
 h5 {
     font-family: "diranista", sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+img {
+    width: 100%;
 }
 
 .canva {
@@ -27,6 +39,7 @@ h5 {
     background-size: cover;
     height: 100vh;
     width: 100%;
+    overflow: hidden;
 }
 
 .offcanvas {
@@ -137,7 +150,7 @@ h5 {
 
 .text-gallery {
     position: relative;
-    color: red;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .text-gallery::before {
@@ -147,5 +160,5 @@ h5 {
     left: 0;
     width: 100%;
     overflow: hidden;
-    color: rgb(2, 2, 172);
+    color: rgb(255, 255, 255);
 }
