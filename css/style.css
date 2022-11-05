@@ -10,15 +10,26 @@
     src: url(/fonts/DiranistaRegular.ttf);
 }
 
+html,
+body {
+    height: 100%;
+    overflow: auto;
+}
+
 p {
     font-family: "Poppins", sans-serif;
 }
 
 h1 {
     font-family: "diranista", sans-serif;
+    text-decoration: underline;
 }
 
 h2 {
+    font-family: "Poppins", sans-serif;
+}
+
+h3 {
     font-family: "Poppins", sans-serif;
 }
 
@@ -32,10 +43,9 @@ html {
 
 .canva {
     background: linear-gradient( 0deg, rgba(0, 0, 0, 1) 0%, rgba(7, 7, 161, 1) 50%, rgba(0, 0, 0, 1) 100%);
-    background-size: cover;
     height: 100vh;
     width: 100%;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .offcanvas {
