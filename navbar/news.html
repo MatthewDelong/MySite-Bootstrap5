@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/style_news_gallery.css" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <script src="https://kit.fontawesome.com/0293e8abb2.js" crossorigin="anonymous"></script>
@@ -14,10 +14,10 @@
 </head>
 
 <body>
-    <section class="canva ">
+    <section class="canva">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="/images/logo.png" alt="" width="93" height="37" class="d-inline-block align-text-center"> News
+                <a class="navbar-brand" href="#"><img src="/images/logo.png" alt="" width="93" height="37" class="d-inline-block align-text-center" /> News
                 </a>
 
                 <button class="navbar-toggler" href="#offcanvasExample" role="button" data-bs-toggle="offcanvas" aria-controls="offcanvasExample">
@@ -26,7 +26,7 @@
 
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                     <div class="offcanvas-header">
-                        <a class="navbar-brand" href="#"><img src="/images/profile.jpg" alt="Profile" style="width:40px;" class="rounded-pill">
+                        <a class="navbar-brand" href="#"><img src="/images/profile.jpg" alt="Profile" style="width: 40px" class="rounded-pill" />
                             <h5>Matthew</h5>
                             <h5>Web Designer</h5>
                         </a>
@@ -53,118 +53,140 @@
                     ><i class="bi bi-images"></i> Gallery</a
                   >
                 </li>
-                
-                        </ul>
-                        <form class="d-flex">
-                            <button class="btn1 px-3" type="submit">Bootstrap 5.2
-                          </button>
-                        </form>
-                    </div>
-                </div>
+              </ul>
+              <form class="d-flex">
+                <button class="btn1 px-3" type="submit">Bootstrap 5.2</button>
+              </form>
             </div>
-        </nav>
+          </div>
+        </div>
+      </nav>
 
-        <div class="container  text-white mt-3 border border-info">
-            <div class="row d-flex align-items-center text-center">
-                <div class="col-sm-10 p-3 content text-white"></div>
-                <h1 class="">inspirational</h1>
-                <h2 class="">No matter what difficulties you may have faced in your life, when you anchor to the present moment and don’t go to your past, you will experience true freedom.</h2>
-                <p></p>
-
-                <img
+      <div class="container text-white mt-3 border border-info">
+        <div class="row d-flex align-items-center text-center">
+          <div class="col-sm-10 p-3 content text-white"></div>
+          <h1 class="">inspirational</h1>
+          <h3 class="">
+            No matter what difficulties you may have faced in your life, when
+            you anchor to the present moment and don’t go to your past, you will
+            experience true freedom.
+          </h3>
+          <p></p>
+          <figure>
+            <img
               class="myImages"
               id="myImg"
-              src="/images/article/inspirational_thumb.png"
+              src="/images/article/inspirational.png"
               alt="Inspiration"
               style="width: 100%; max-width: 300px"
             />
+            <figcaption>Click to Enlarge</figcaption>
+          </figure>
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <!-- The Close Button -->
+            <span class="close">&times;</span>
 
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
-              <!-- The Close Button -->
-              <span class="close">&times;</span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01" />
 
-              <!-- Modal Content (The Image) -->
-              <img class="modal-content" id="img01" />
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container text-white mt-3 border border-info">
+        <div class="row d-flex align-items-center text-center">
+          <div class="col-sm-10 p-3 content text-white"></div>
+          <h1 class="">Galaxy Watch 3, 41mm 4G</h1>
+          <h3 class="">
+            Upgraded from a Galaxy Watch to a Galaxy Watch 3. Here are some
+            specifications.
 
-              <!-- Modal Caption (Image Text) -->
-              <div id="caption"></div>
-                    </div>
-                </div>
-                </div>
-                <div class="container text-white mt-3 border border-info">
-                    <div class="row d-flex align-items-center text-center">
-                        <div class="col-sm-10 p-3 content text-white"></div>
-                        <h1 class="">Galaxy Watch 3, 41mm 4G</h1>
-                        <h2 class="">Upgraded from a Galaxy Watch to a Galaxy Watch 3. Here are some specifications.
+            <br />
 
-                            <br />
+            <b>
+              <em>PLATFORM</em>
+            </b>
+            <br />
+            Tizen OS 5.5.0.2
 
-                            <b>
-                      <em>PLATFORM</em>
-                    </b>
-                            <br /> Tizen OS 5.5.0.2
+            <br />
+            Chipset Exynos 9110 (10 nm)
 
-                            <br /> Chipset Exynos 9110 (10 nm)
+            <br />
+            CPU Dual-core 1.15 GHz Cortex-A53
 
-                            <br /> CPU Dual-core 1.15 GHz Cortex-A53
+            <br />
+            GPU Mali-T720
+          </h3>
+          <p></p>
+          <figure>
+            <img
+              class="myImages"
+              id="myImg"
+              src="/images/article/gw3.png"
+              alt="Galaxy Watch 3"
+              style="width: 100%; max-width: 300px"
+            />
+            <figcaption>Click to Enlarge</figcaption>
+          </figure>
 
-                            <br /> GPU Mali-T720</h2>
-                        <p></p>
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <!-- The Close Button -->
+            <span class="close">&times;</span>
 
-                        <img
-                        class="myImages"
-                        id="myImg"
-                        src="/images/article/gw3.png"
-                        alt="Galaxy Watch 3"
-                        style="width: 100%; max-width: 300px"
-                      />
-          
-                      <!-- The Modal -->
-                      <div id="myModal" class="modal">
-                        <!-- The Close Button -->
-                        <span class="close">&times;</span>
-          
-                        <!-- Modal Content (The Image) -->
-                        <img class="modal-content" id="img01" />
-          
-                        <!-- Modal Caption (Image Text) -->
-                        <div id="caption"></div>
-                              </div>
-                          </div> 
-            </div>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01" />
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+          </div>
+        </div>
+      </div>
     </section>
+
     <!-- Footer -->
-    <footer class="text-center text-white" style="background-color: rgba(0, 0, 0, 1);">
-        <!-- Grid container -->
-        <div class="container pt-1">
-            <!-- Section: Social media -->
-            <section class="mb-2">
-                <!-- Facebook -->
-                <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="https://www.facebook.com/matthew.j.delong" role="button" data-mdb-ripple-color="dark"><i class="bi bi-facebook"></i
-        ></a>
+    <footer
+      class="text-center text-white"
+      style="background-color: rgba(0, 0, 0, 1)"
+    >
+      <!-- Grid container -->
+      <div class="container pt-1">
+        <!-- Section: Social media -->
+        <section class="mb-2">
+          <!-- Facebook -->
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #3b5998"
+            href="https://www.facebook.com/matthew.j.delong"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="bi bi-facebook"></i
+          ></a>
 
                                 <!-- Twitter -->
-                                <a class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="https://twitter.com/Matthew_Delong?s=09" role="button" data-mdb-ripple-color="dark"><i class="bi bi-twitter"></i>
-                </a>
+                                <a class="btn text-white btn-floating m-1" style="background-color: #55acee" href="https://twitter.com/Matthew_Delong?s=09" role="button" data-mdb-ripple-color="dark"><i class="bi bi-twitter"></i>
+          </a>
 
                                 <!-- YouTube -->
-                                <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="https://youtube.com/user/MatthewDelongUK" role="button" data-mdb-ripple-color="dark"><i class="bi bi-youtube"></i>
-        </a>
+                                <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39" href="https://youtube.com/user/MatthewDelongUK" role="button" data-mdb-ripple-color="dark"><i class="bi bi-youtube"></i>
+          </a>
 
                                 <!-- Instagram -->
-                                <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="http://Instagram.com/matthewjdelong" role="button" data-mdb-ripple-color="dark"><i class="bi bi-instagram"></i
-        ></a>
+                                <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac" href="http://Instagram.com/matthewjdelong" role="button" data-mdb-ripple-color="dark"><i class="bi bi-instagram"></i
+          ></a>
                                 <!-- Github -->
-                                <a class="btn text-white btn-floating m-1" style="background-color: #333333;" href="https://github.com/MatthewDelong" role="button" data-mdb-ripple-color="dark"><i class="bi bi-github"></i
-        ></a>
+                                <a class="btn text-white btn-floating m-1" style="background-color: #333333" href="https://github.com/MatthewDelong" role="button" data-mdb-ripple-color="dark"><i class="bi bi-github"></i
+          ></a>
     </section>
     <!-- Section: Social media -->
     </div>
     <!-- Grid container -->
 
     <!-- Copyright -->
-    <div class="text-center text-white p-1" style="background-color: rgba(0, 0, 0, 1);">
+    <div class="text-center text-white p-1" style="background-color: rgba(0, 0, 0, 1)">
         Site Design & Logo © 2022
         <a class="text-white" href="#">Matthews-World</a>
     </div>
