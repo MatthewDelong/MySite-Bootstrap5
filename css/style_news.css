@@ -8,6 +8,7 @@
 @font-face {
     font-family: "diranista";
     src: url(/fonts/DiranistaRegular.ttf);
+    font-display: swap;
 }
 
 body {
