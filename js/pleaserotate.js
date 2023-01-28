@@ -141,3 +141,137 @@
         var backdropElement = document.getElementById("pleaserotate-backdrop");
 
         if(visible){
+            if(backdropElement){
+                backdropElement.style["display"] = "block";
+            }
+        } else {
+            if(backdropElement){
+                backdropElement.style["display"] = "none";
+
+            }
+        }
+    }
+
+    function orientationChanged(){
+        var triggerOn = currentOrientation && !options.forcePortrait || !currentOrientation && options.forcePortrait,
+            propogate;
+            
+        if(triggerOn){
+            propogate = options.onShow();
+            setBodyClass("showing");
+        } else {
+            propogate = options.onHide();
+            setBodyClass("hiding");
+        }
+
+
+        if(propogate !== undefined && !propogate){
+            return;
+        }
+
+        PleaseRotate.Showing = triggerOn;
+
+        setVisibility(triggerOn);
+
+    }
+
+    function isPortrait(){
+        return ( window.innerWidth < window.innerHeight);
+    }
+
+    function checkOrientationChange(){
+        if(!isMobile && options.onlyMobile){
+            if(!init){
+                init = true;
+                setVisibility(false);
+                setBodyClass("hiding");
+                options.onHide(); // run this exactly once if not mobile
+            }
+            return;
+        }
+
+        if(currentOrientation !== isPortrait()){
+            currentOrientation = isPortrait();
+            orientationChanged();
+        }
+    }
+
+    /* public functions */
+
+    PleaseRotate.start = function(opts){
+        if(!document.body){
+            window.addEventListener('load', PleaseRotate.start.bind(null, opts), false);
+            return;
+        }
+
+        if(opts){
+            overrideOptions(opts);
+        }
+        
+        createStyleSheet();
+        createElements();
+        checkOrientationChange();
+        window.addEventListener( 'resize', checkOrientationChange, false );
+
+        if(options.allowClickBypass){
+            document.getElementById("pleaserotate-backdrop").addEventListener("click", function(){
+                var propogate = options.onHide();
+                setBodyClass("hiding");
+                PleaseRotate.Showing = false;
+                
+                if(propogate === undefined || propogate){
+                    setVisibility(false);
+                }
+            });
+        }
+    }
+
+    PleaseRotate.stop = function(){
+        window.removeEventListener('resize', onWindowResize, false);
+    }
+
+    PleaseRotate.onShow = function(fn){
+        options.onShow = fn;
+
+        if(init){
+            // if we have already been initialized, force a check
+            init = false;
+            currentOrientation = null;
+            checkOrientationChange();
+        }
+    };
+
+    PleaseRotate.onHide = function(fn){
+        options.onHide = fn;
+
+        if(init){
+            // if we have already been initialized, force a check so that onHide gets called
+            currentOrientation = null;
+            init = false;
+            checkOrientationChange();
+        }
+    };
+
+    PleaseRotate.Showing = false;
+
+    /* plumbing to support AMD, CommonJS, or Globals */
+
+    if (typeof define === 'function' && define.amd) {
+        setBodyClass("initialized");
+        define(['PleaseRotate'], function() {
+            return PleaseRotate;
+        });
+    } else if (typeof exports === 'object') {
+        setBodyClass("initialized");
+        module.exports = PleaseRotate;
+    } else {
+        setBodyClass("initialized");
+        window.PleaseRotate = PleaseRotate;
+        overrideOptions(window.PleaseRotateOptions);
+
+        if (options.startOnPageLoad) {
+            PleaseRotate.start();
+        }
+    }
+
+})();
