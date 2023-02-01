@@ -63,6 +63,15 @@ h5 {
     box-shadow: none;
 }
 
+.navbar {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(7, 7, 161, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
 .navbar-toggler {
     font-size: 40px;
     color: white;
