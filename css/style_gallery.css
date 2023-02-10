@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "diranista";
+    src: url(/fonts/DiranistaRegular.ttf);
+    font-display: swap;
+}
+
+html,
+body {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(7, 7, 161, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  ) fixed;
+    min-height: 100%;
+    min-width: 100%;
+    overflow-y: auto;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-size: 2em;
+    color: #67e6ec;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+h1 {
+    font-family: "diranista", sans-serif;
+    text-decoration: underline;
+}
+
+h2 {
+    font-family: "Poppins", sans-serif;
+}
+
+h3 {
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+h5 {
+    font-family: "diranista", sans-serif;
+}
+
+.canva {
+    min-height: 100vh;
+    min-width: 100%;
+}
+
+.offcanvas {
+    background: rgba(23, 23, 66);
+}
+
+.btn-close:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(7, 7, 161, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.navbar-toggler {
+    font-size: 40px;
+    color: white;
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    color: white;
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.navbar-brand:hover {
+    color: white;
+}
+
+.navbar-nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.5s;
+}
+
+.navbar-nav a:hover {
+    color: rgba(103, 230, 236);
+}
+
+.btn1 {
+    height: 45px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgba(28, 31, 56, 0.657);
+    font-weight: 500;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    padding: 6px;
+}
+
+.btn1 ::before,
+.btn1 ::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+}
+
+.btn1 ::after {
+    height: 0;
+    top: 0;
+    left: 0;
+    transition-duration: 0.6s;
+    width: 100%;
+}
+
+.btn1:hover ::after {
+    height: 100%;
+    background: rgba(72, 74, 102, 0.657);
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 4rem;
+}
+
+.content p {
+    font-size: 1rem;
+}
+
+.content input {
+    height: 65px;
+    width: 70%;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.text-gallery {
+    position: relative;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.text-gallery::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    color: rgb(255, 255, 255);
+}
