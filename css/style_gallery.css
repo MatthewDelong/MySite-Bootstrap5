@@ -183,3 +183,13 @@ h5 {
     overflow: hidden;
     color: rgb(255, 255, 255);
 }
+
+.card {
+  padding-bottom: 2pc;
+  border-radius: 1.5rem;
+}
+
+.card-body{
+  margin-right: 5px;
+  padding-bottom: 5px;
+}
