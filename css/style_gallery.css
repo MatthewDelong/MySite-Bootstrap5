@@ -187,9 +187,40 @@ h5 {
 .card {
   padding-bottom: 2pc;
   border-radius: 1.5rem;
+  border-radius: 5px;
+
+  border: 1px solid #67e6ec;
+
+  box-shadow: 0 0 20px rgba(103, 230, 236, 1);
 }
 
 .card-body{
   margin-right: 5px;
   padding-bottom: 5px;
 }
+
+ .offcanvas-header img { 
+   display: block; 
+   width: 75px; 
+   height: 75px; 
+   border-radius: 50%; 
+   margin: 0 auto; 
+   background: black; 
+   border-top: 5px solid #3457D5; 
+   border-right: 5px solid #1E90FF; 
+   border-bottom: 5px solid #67E6EC; 
+   border-left: 5px solid blue; 
+
+ } 
+ 
+ .offcanvas-header h5 { 
+   color: #ffffff; 
+   margin: 10px 0 5px;
+ }
+ 
+ .offcanvas-header p { 
+   color: rgb(206, 240, 253); 
+   font-size: 14px;
+ }
+
+
