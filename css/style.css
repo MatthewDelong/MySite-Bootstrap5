@@ -193,6 +193,7 @@ h5 {
  .offcanvas-header h5 { 
    color: #ffffff; 
    margin: 10px 0 5px;
+   text-align: center;
  }
  
  .offcanvas-header p { 
