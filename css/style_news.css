@@ -42,6 +42,10 @@ h3 {
     font-weight: 200;
 }
 
+h4 {
+  font-family: "diranista", sans-serif;
+}
+
 h5 {
     font-family: "diranista", sans-serif;
 }
@@ -218,6 +222,7 @@ h5 {
     display: block;
     width: 80%;
     max-width: 700px;
+    border: 2px solid #67e6ec;
 }
 
 
