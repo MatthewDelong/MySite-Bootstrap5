@@ -49,6 +49,16 @@ h5 {
   font-family: "diranista", sans-serif;
 }
 
+.border-info {
+  border: 1px solid #67e6ec;
+  /*box-shadow: 0 0 20px rgba(103, 230, 236, 1);*/
+}
+
+.border-shadow {
+  /*border: 1px solid #67e6ec;*/
+  box-shadow: 0 0 20px rgba(103, 230, 236, 1);
+}
+
 .canva {
   height: 100%;
   width: 100%;
@@ -204,4 +214,3 @@ h5 {
    color: rgb(206, 240, 253); 
    font-size: 14px;
  }
-
