@@ -188,9 +188,7 @@ h5 {
   padding-bottom: 2pc;
   border-radius: 1.5rem;
   border-radius: 5px;
-
-  border: 1px solid #67e6ec;
-
+  border: 2px solid #67e6ec;
   box-shadow: 0 0 20px rgba(103, 230, 236, 1);
 }
 
