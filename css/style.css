@@ -57,6 +57,10 @@ h5 {
   box-shadow: 0 0 20px rgba(103, 230, 236, 1);
 }
 
+.bg-secondary {
+  background: linear-gradient(157deg, rgba(0,0,0,1) 0%, rgba(137,137,140,1) 50%, rgba(0,0,0,1) 100%);
+}
+
 .canva {
   height: 100%;
   width: 100%;
