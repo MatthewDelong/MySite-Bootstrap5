@@ -58,7 +58,8 @@ h5 {
 }
 
 .bg-secondary {
-  background: linear-gradient(157deg, rgba(0,0,0,1) 0%, rgba(137,137,140,1) 50%, rgba(0,0,0,1) 100%);
+  background: rgb(0,0,0);
+  background: linear-gradient(157deg, rgba(0,0,0,1) 0%, rgba(52,52,235,1) 50%, rgba(0,0,0,1) 100%);
 }
 
 .canva {
