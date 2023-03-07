@@ -237,4 +237,5 @@ h5 {
 }
 .carousel-indicators {
   bottom: 1rem;
+  padding: 10px;
 }
