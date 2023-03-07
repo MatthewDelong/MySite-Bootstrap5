@@ -222,4 +222,15 @@ h5 {
    font-size: 14px;
  }
 
-
+.carousel { 
+  overflow: hidden; padding-bottom: 4rem; 
+}
+.carousel-caption { 
+  top: 100%; 
+}
+.carousel-inner {
+  overflow: visible; 
+}
+.carousel-control-next, .carousel-control-prev, .carousel-indicators {
+  bottom: 4rem; 
+}
