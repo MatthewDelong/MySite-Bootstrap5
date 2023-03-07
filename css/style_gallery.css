@@ -232,6 +232,9 @@ h5 {
 .carousel-inner {
   overflow: visible; 
 }
-.carousel-control-next, .carousel-control-prev, .carousel-indicators {
+.carousel-control-next, .carousel-control-prev {
   bottom: 4rem; 
+}
+.carousel-indicators {
+  bottom: 1rem;
 }
