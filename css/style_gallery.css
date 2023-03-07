@@ -182,6 +182,7 @@ h5 {
     width: 100%;
     overflow: hidden;
     color: rgb(255, 255, 255);
+    font-weight: bold;
 }
 
 .card {
