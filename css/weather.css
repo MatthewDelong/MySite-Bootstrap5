@@ -31,11 +31,18 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  border: 2px solid #67e6ec;
+  border-radius: 5px;
 }
 
 .fw-bold {
   font-weight: bold;
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+.border-info {
+  border: 2px solid #67e6ec;
+  border-radius: 5px;
 }
 
 h1 {
@@ -183,6 +190,7 @@ h5 {
   padding: 16px 15px;
   align-items: center;
   border-bottom: 1px solid #ccc;
+  
 }
 header i{
   font-size: 0em;

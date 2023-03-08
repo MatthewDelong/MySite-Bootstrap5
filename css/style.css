@@ -30,6 +30,8 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  border: 2px solid #67e6ec;
+  border-radius: 5px;
 }
 
 .fw-bold {

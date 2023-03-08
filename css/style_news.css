@@ -29,7 +29,7 @@ body {
   background-image: url('/images/earth.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat
 }
 
 .fw-bold {
@@ -67,6 +67,7 @@ h5 {
 
 .border-info {
   border: 2px solid #67e6ec;
+  border-radius: 5px;
 }
 
 .bg-secondary {
