@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK00CLVL7W"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-XK00CLVL7W');
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Discover Matthews-World, a place where i share my news, coding experiences and photography gallery">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  
+    <link rel="stylesheet" href="/css/weather.css" />
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="/image/x-icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <script src="https://kit.fontawesome.com/0293e8abb2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="preload" href="fonts/DiranistaRegular.ttf" as="font" type="/font/ttf" crossorigin>
+    <title>Matthews-World</title>
+</head>
+
+<body>
+    <section class="canva">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="/images/logo.png" alt="logo" width="130" height="51" class="d-inline-block align-text-center">
+                </a>
+
+                <button class="navbar-toggler" href="#offcanvasExample" role="button" data-bs-toggle="offcanvas" aria-controls="offcanvasExample">
+            <span class="navbar-toggler"><i class="bi bi-list"></i></span>
+          </button>
+
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand" href="#"><img src="/images/profile.jpg" alt="profile"  class="rounded-pill">
+                   <h5>Matthew  &#x1f1ec;&#x1f1e7;</h5>
+                    <h5>Website Developer</h5>
+                        </a>
+                        <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link px-3" href="/index.html"><i class="bi bi-house-door"></i> Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-3" href="/navbar/news.html"
+                    ><i class="bi bi-newspaper"></i> News</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-3" href="/navbar/coding.html"
+                    ><i class="bi bi-journal-code"></i> Coding</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-3" href="/navbar/gallery.html"
+                    ><i class="bi bi-images"></i> Gallery</a
+                  >
+                </li>
+                </li>
+                    <li class="nav-item">
+                  <a class="nav-link px-3" href="/navbar/weather.html"
+                    ><i class="bi bi-images"></i> Weather</a
+                  >
+                </li>
+                        </ul>
+                        <form class="d-flex">
+                            <button class="btn1 px-3 align-center" href="#">Bootstrap 5.3.0-alpha-1
+                          </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+  <div class="container text-white text-center">
+<div class="row justify-content-center">
+    <div class="col-md">
+    <div class="wrapper">
+      <header><i class='bx bx-left-arrow-alt'></i>Current Weather</header>
+      <section class="input-part">
+        <p class="info-txt"></p>
+        <div class="content">
+          <input type="text" spellcheck="false" placeholder="Enter city name" required>
+          <div class="separator"></div>
+          <button>Get Device Location</button>
+        </div>
+      </section>
+      <section class="weather-part">
+        <img src="" alt="Weather Icon">
+        <div class="temp">
+          <span class="numb">_</span>
+          <span class="deg">°</span>C
+        </div>
+        <div class="weather">_ _</div>
+        <div class="location">
+          <i class='bx bx-map'></i>
+          <span>_, _</span>
+        </div>
+        <div class="bottom-details">
+          <div class="column feels">
+            <i class='bx bxs-thermometer'></i>
+            <div class="details">
+              <div class="temp">
+                <span class="numb-2">_</span>
+                <span class="deg">°</span>C
+              </div>
+              <p>Feels like</p>
+            </div>
+          </div>
+          <div class="column humidity">
+            <i class='bx bxs-droplet-half'></i>
+            <div class="details">
+              <span>_</span>
+              <p>Humidity</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Footer -->
+
+    <footer class="text-center text-white" style="background-color: rgba(7, 7, 161, 0);">
+
+        <!-- Grid container -->
+        <div class="container pt-3">
+            <!-- Section: Social media -->
+            <section class="mb-2">
+                <!-- Facebook -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="https://www.facebook.com/matthew.j.delong"target="_blank" class="me-4 text-reset"><i class="bi bi-facebook"></i
+        ></a>
+
+                <!-- Twitter -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="https://twitter.com/Matthew_Delong?s=09"target="_blank" class="me-4 text-reset"><i class="bi bi-twitter"></i>
+                </a>
+
+                <!-- YouTube -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="https://youtube.com/user/MatthewDelongUK"target="_blank" class="me-4 text-reset"><i class="bi bi-youtube"></i>
+        </a>
+
+                <!-- Instagram -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="http://Instagram.com/matthewjdelong"target="_blank" class="me-4 text-reset"><i class="bi bi-instagram"></i
+        ></a>
+                <!-- Github -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #333333;" href="https://github.com/MatthewDelong"target="_blank" class="me-4 text-reset"><i class="bi bi-github"></i
+                
+        ></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center text-white p-1" style="background-color: rgba(0, 0, 0,0);">
+            Site Design & Logo © 2023
+            <a class="text-white" href="#">Matthews-World</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Section: Social media -->
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+    <script src="/js/weather.js"></script>
+
+  </body>
+</html>
