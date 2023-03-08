@@ -176,7 +176,7 @@ h5 {
   box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
 }
 .wrapper header{
-  display: flex;
+  text-align: center;
   font-size: 21px;
   font-weight: 500;
   color: #43AFFC;
@@ -188,6 +188,7 @@ header i{
   font-size: 0em;
   cursor: pointer;
   margin-right: 8px;
+  align-items: center;
 }
 .wrapper.active header i{
   margin-left: 5px;
@@ -348,6 +349,3 @@ header i{
 .humidity i{
   font-size: 37px;
 }
-
-#placeholder {
-  color: black;
