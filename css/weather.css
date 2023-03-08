@@ -230,10 +230,10 @@ header i{
 }
 .separator::before{
   content: "or";
-  color: #b3b3b3;
+  color: #fff;
   font-size: 19px;
   padding: 0 15px;
-  background: #fff;
+  background: #000;
 }
 .input-part button{
   color: #fff;
@@ -328,3 +328,6 @@ header i{
 .humidity i{
   font-size: 37px;
 }
+
+#placeholder {
+  color: black;
