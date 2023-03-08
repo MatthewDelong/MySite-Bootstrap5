@@ -23,6 +23,20 @@ body {
     overflow-y: auto;
 }
 
+.masthead {
+  height: 25vh;
+  min-height: 250px;
+  background-image: url('/images/earth.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fw-bold {
+  font-weight: bold;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
 p {
     font-family: "Poppins", sans-serif;
     font-size: 24px;
@@ -31,12 +45,14 @@ p {
 }
 
 h1 {
-    font-family: "diranista", sans-serif;
-    text-decoration: underline;
+  font-family: "diranista", sans-serif;
+  font-size: 48px;
+  text-decoration: underline;
 }
 
 h2 {
-    font-family: "Poppins", sans-serif;
+  font-family: "diranista", sans-serif;
+  text-decoration: underline;
 }
 
 h3 {

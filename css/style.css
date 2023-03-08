@@ -23,6 +23,20 @@ body {
   overflow-y: auto;
 }
 
+.masthead {
+  height: 25vh;
+  min-height: 250px;
+  background-image: url('/images/earth.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fw-bold {
+  font-weight: bold;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
 p {
   font-family: "Poppins", sans-serif;
 }
