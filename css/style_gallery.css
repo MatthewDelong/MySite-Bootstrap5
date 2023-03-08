@@ -239,3 +239,7 @@ h5 {
   bottom: 1rem;
   padding: 10px;
 }
+
+img {
+border: 2px solid #67e6ec;
+}
