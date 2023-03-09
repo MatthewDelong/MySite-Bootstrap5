@@ -65,6 +65,10 @@ h5 {
   font-family: "diranista", sans-serif;
 }
 
+.divider{ 
+border-bottom: 1px solid #fff;
+}
+
 .border-info {
   border: 2px solid #67e6ec;
   border-radius: 5px;
