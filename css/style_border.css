@@ -4,15 +4,6 @@
   inherits: false;
 }
 
-.card {
-  background: #191c29;
-  width: var(--card-width);
-  height: var(--card-height);
-  padding: 3px;
-  position: relative;
-  border-radius: 6px;
-}
-
 .card::before {
   content: "";
   width: 104%;
@@ -55,8 +46,4 @@
   100% {
     --rotate: 360deg;
   }
-}
-.bg-secondary {
-    background: rgb(0, 0, 0);
-    background: linear-gradient(157deg, rgba(0, 0, 0, 1) 0%, rgba(52, 52, 235, 1) 50%, rgba(0, 0, 0, 1) 100%);
 }
