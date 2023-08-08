@@ -63,10 +63,10 @@ h5 {
     border-bottom: 1px solid #fff;
 }
 
-/*.border-info {
+.border-info {
     border: 2px solid #67e6ec;
     border-radius: 5px;
-}*/
+}
 
 .border-shadow {
     box-shadow: 0 0 20px rgba(103, 230, 236, 1);
