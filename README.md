@@ -10,7 +10,8 @@ PC Browser
 Mobile Browser 
 ![Screenshot_20230810_181643_Samsung Internet](https://github.com/MatthewDelong/MySite-Bootstrap5/assets/1036327/a73ae23c-41f6-486c-bbb6-354dd431a507)
 
-![Screenshot_20230810_181715_Samsung Internet](https://github.com/MatthewDelong/MySite-Bootstrap5/assets/1036327/c620b3cf-046e-4eb8-8e77-fedf4d9edaff)
+![Screenshot_20230810_181715_Samsung Internet](https://github.com/MatthewDelong/MySite-Bootstrap5/assets/1036327/542c0261-9eb5-46f0-9fd6-8fcd0ac8028b)
+
 
 
 
