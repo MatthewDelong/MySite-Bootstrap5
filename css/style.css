@@ -77,6 +77,11 @@ h5 {
     background: linear-gradient(157deg, rgba(0, 0, 0, 1) 0%, rgba(52, 52, 235, 1) 50%, rgba(0, 0, 0, 1) 100%);
 }
 
+.btn-info {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(157deg, rgba(0, 0, 0, 1) 0%, rgba(52, 52, 235, 1) 50%, rgba(0, 0, 0, 1) 100%);
+}
+
 .canva {
     height: 100%;
     width: 100%;
