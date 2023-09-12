@@ -65,6 +65,11 @@ h5 {
     font-family: "diranista", sans-serif;
 }
 
+h6 {
+    font-size: 0.7em;
+    font-style: italic;
+}
+
 .border-info {
   border: 2px solid #67e6ec;
   border-radius: 5px;
