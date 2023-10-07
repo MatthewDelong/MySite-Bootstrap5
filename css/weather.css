@@ -175,8 +175,7 @@ h5 {
   background: #43AFFC;
 }
 .wrapper{
-  width: 400px
-  background: #fff;
+  background: #080000;
   border-radius: 7px;
   box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
 }
@@ -262,14 +261,24 @@ header i{
   padding: 0 15px;
   background: #000;
 }
-.input-part button{
+.input-part button {
   color: #fff;
   cursor: pointer;
-  background: #43AFFC;
+  background: linear-gradient(
+    157deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(7, 7, 161, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
   transition: 0.3s ease;
 }
-.input-part button:hover{
-  background: #1d9ffc;
+.input-part button:hover {
+  background: linear-gradient(
+    157deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(7, 7, 161, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
 
 .wrapper .weather-part{
