@@ -140,6 +140,7 @@ h5 {
 .btn1 {
     height: 45px;
     width: 100%;
+    text-align: center;
     border: none;
     outline: none;
     color: white;
