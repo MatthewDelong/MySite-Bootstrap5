@@ -56,7 +56,7 @@ h2 {
 }
 
 h3 {
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     font-weight: 200;
 }
 
@@ -75,7 +75,7 @@ h6 {
 }
 
 .divider {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #67e6ec;
 }
 
 .border-info {
