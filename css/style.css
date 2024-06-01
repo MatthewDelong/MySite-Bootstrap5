@@ -10,26 +10,35 @@
     src: url(/fonts/DiranistaRegular.ttf);
     font-display: swap;
 }
-
+html,
 body {
-    background: linear-gradient( 0deg, rgba(0, 0, 0, 1) 0%, rgba(7, 7, 161, 1) 50%, rgba(0, 0, 0, 1) 100%) fixed;
-    height: 100%;
-    width: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(7, 7, 161, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  ) fixed;
+    min-height: 100%;
+    min-width: 100%;
     overflow-y: auto;
 }
 
 .masthead {
-    height: 25vh;
-    min-height: 250px;
-    background-image: url('/images/earth.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  height: 25vh;
+  min-height: 250px;
+  background-image: url('/images/earth.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat
 }
 
 .fw-bold {
-    font-weight: bold;
-    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  font-weight: bold;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+/* dt is date posted */
+dt {
+    text-align: left;
 }
 
 p {
@@ -37,9 +46,9 @@ p {
 }
 
 h1 {
-    font-family: "diranista", sans-serif;
-    font-size: 48px;
-    text-decoration: underline;
+  font-family: "diranista", sans-serif;
+  font-size: 48px;
+  text-decoration: underline;
 }
 
 h2 {
@@ -47,25 +56,27 @@ h2 {
 }
 
 h3 {
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins";
+    font-weight: 200;
 }
 
 h4 {
-    font-family: "diranista", sans-serif;
-    font-weight: bold;
+  font-family: "diranista", sans-serif;
+  font-weight: bold;
 }
 
 h5 {
     font-family: "diranista", sans-serif;
 }
 
-.divider {
-    border-bottom: 1px solid #fff;
+h6 {
+    font-size: 0.7em;
+    font-style: italic;
 }
 
 .border-info {
-    border: 2px solid #67e6ec;
-    border-radius: 5px;
+  border: 2px solid #67e6ec;
+  border-radius: 5px;
 }
 
 .border-shadow {
@@ -85,7 +96,7 @@ h5 {
 .canva {
     height: 100%;
     width: 100%;
-    
+    overflow-y: auto;
 }
 
 .offcanvas {
@@ -98,7 +109,12 @@ h5 {
 }
 
 .navbar {
-    background: linear-gradient( 0deg, rgba(0, 0, 0, 1) 0%, rgba(7, 7, 161, 1) 50%, rgba(0, 0, 0, 1) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(7, 7, 161, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
 
 .navbar-toggler {
@@ -117,7 +133,7 @@ h5 {
 .navbar-brand {
     color: white;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 16px;
 }
 
 .navbar-brand:hover {
@@ -127,7 +143,7 @@ h5 {
 .navbar-nav a {
     text-decoration: none;
     color: white;
-    font-size: 1em;
+    font-size: 16px;
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
     transition: all 0.5s;
@@ -181,12 +197,137 @@ h5 {
     text-align: center;
 }
 
-.content h1 {
+.content h3 {
     font-size: 4rem;
 }
 
 .content p {
     font-size: 1rem;
+}
+
+.content input {
+    height: 65px;
+    width: 70%;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+#myImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    height: 85%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid #67e6ec;
+    box-shadow: 0 0 20px rgba(103, 230, 236, 1);
+}
+
+#myImg:hover {
+    opacity: 0.7;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 10px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content (Image) */
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    border: 2px solid #67e6ec;
+}
+
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 2px 0;
+    height: 150px;
+}
+
+
+/* Add Animation - Zoom in the Modal */
+
+.modal-content,
+#caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+
+/* The Close Button */
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
 }
 
 .text-gallery {
@@ -204,82 +345,27 @@ h5 {
     color: rgb(255, 255, 255);
 }
 
-#myImg {
-    border-radius: 5px;
-    border: 1px solid #67e6ec;
-    box-shadow: 0 0 20px rgba(103, 230, 236, 1);
-}
+ .offcanvas-header img { 
+   display: block; 
+   width: 75px; 
+   height: 75px; 
+   border-radius: 50%; 
+   margin: 0 auto; 
+   background: black; 
+   border-top: 5px solid #3457D5; 
+   border-right: 5px solid #1E90FF; 
+   border-bottom: 5px solid #67E6EC; 
+   border-left: 5px solid blue; 
 
-.offcanvas-header img {
-    display: block;
-    width: 75px;
-    height: 75px;
-    border-radius: 50%;
-    margin: 0 auto;
-    background: black;
-    border-top: 5px solid #3457D5;
-    border-right: 5px solid #1E90FF;
-    border-bottom: 5px solid #67E6EC;
-    border-left: 5px solid blue;
-}
-
-.offcanvas-header h5 {
-    color: #ffffff;
-    margin: 10px 0 5px;
-    text-align: center;
-}
-
-.offcanvas-header p {
-    color: rgb(206, 240, 253);
-    font-size: 14px;
-}
-
-@property --rotate {
-    syntax: "<angle>";
-    initial-value: 132deg;
-    inherits: false;
-  }
-  
-  .card::before {
-    content: "";
-    width: 104%;
-    height: 104%;
-    border-radius: 8px;
-    background-image: linear-gradient(
-      var(--rotate)
-      , #5ddcff, #3c67e3 43%, #4e00c2);
-      position: absolute;
-      z-index: -1;
-      top: -2%;
-      left: -2%;
-      animation: spin 2.5s linear infinite;
-  }
-  
-  .card::after {
-    position: absolute;
-    content: "";
-    top: calc(var(--card-height) / 6);
-    left: 0;
-    right: 0;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-    transform: scale(0.8);
-    filter: blur(calc(var(--card-height) / 6));
-    background-image: linear-gradient(
-      var(--rotate)
-      , #5ddcff, #3c67e3 43%, #4e00c2);
-      opacity: 1;
-    transition: opacity .5s;
-    animation: spin 2.5s linear infinite;
-  }
-  
-  @keyframes spin {
-    0% {
-      --rotate: 0deg;
-    }
-    100% {
-      --rotate: 360deg;
-    }
-  }
+ } 
+ 
+ .offcanvas-header h5 { 
+   color: #ffffff; 
+   margin: 10px 0 5px;
+   text-align: center;
+ }
+ 
+ .offcanvas-header p { 
+   color: rgb(206, 240, 253); 
+   font-size: 14px;
+ }
