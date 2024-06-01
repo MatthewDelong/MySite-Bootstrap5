@@ -74,6 +74,10 @@ h6 {
     font-style: italic;
 }
 
+.divider {
+    border-bottom: 2px solid #fff;
+}
+
 .border-info {
   border: 2px solid #67e6ec;
   border-radius: 5px;
