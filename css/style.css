@@ -32,6 +32,18 @@ body {
   background-repeat: no-repeat
 }
 
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 2;
+    }
+
+.btn-primary {
+    color: solid #67e6ec;
+}
+
 .fw-bold {
   font-weight: bold;
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
