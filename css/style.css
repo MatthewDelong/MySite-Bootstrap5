@@ -25,7 +25,7 @@ body {
 
 .masthead {
   height: 25vh;
-  min-height: 250px;
+  min-height: 15.62em;
   background-image: url('/images/earth.jpg');
   background-size: cover;
   background-position: center;
@@ -47,7 +47,7 @@ p {
 
 h1 {
   font-family: "diranista", sans-serif;
-  font-size: 48px;
+  font-size: 3em;
   text-decoration: underline;
 }
 
@@ -79,12 +79,12 @@ h6 {
 }
 
 .border-info {
-  border: 2px solid #67e6ec;
-  border-radius: 5px;
+  border: 0.125em solid #67e6ec;
+  border-radius: 0.31em;
 }
 
 .border-shadow {
-    box-shadow: 0 0 20px rgba(103, 230, 236, 1);
+    box-shadow: 0 0 1.25em rgba(103, 230, 236, 1);
 }
 
 .bg-secondary {
@@ -122,7 +122,7 @@ h6 {
 }
 
 .navbar-toggler {
-    font-size: 40px;
+    font-size: 2.5em;
     color: white;
     outline: none;
     box-shadow: none;
@@ -137,7 +137,7 @@ h6 {
 .navbar-brand {
     color: white;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .navbar-brand:hover {
@@ -147,7 +147,7 @@ h6 {
 .navbar-nav a {
     text-decoration: none;
     color: white;
-    font-size: 16px;
+    font-size: 1em;
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
     transition: all 0.5s;
@@ -158,7 +158,7 @@ h6 {
 }
 
 .btn1 {
-    height: 45px;
+    height: 2.81em;
     width: 100%;
     text-align: center;
     border: none;
@@ -210,11 +210,11 @@ h6 {
 }
 
 .content input {
-    height: 65px;
+    height: 4em;
     width: 70%;
     background: white;
-    padding: 20px;
-    border-radius: 5px;
+    padding: 1.25em;
+    border-radius: 0.3em;
     outline: none;
     border: none;
 }
@@ -225,7 +225,7 @@ h6 {
     margin-right: auto;
     width: 75%;
     height: 85%;
-    border-radius: 5px;
+    border-radius: 0.31em;
     cursor: pointer;
     transition: 0.3s;
     border: 1px solid #67e6ec;
@@ -269,7 +269,7 @@ h6 {
     margin: auto;
     display: block;
     width: 80%;
-    max-width: 700px;
+    max-width: 43.75em;
     border: 2px solid #67e6ec;
 }
 
@@ -280,7 +280,7 @@ h6 {
     margin: auto;
     display: block;
     width: 80%;
-    max-width: 700px;
+    max-width: 43.75em;
     text-align: center;
     color: #ccc;
     padding: 2px 0;
@@ -310,10 +310,10 @@ h6 {
 
 .close {
     position: absolute;
-    top: 10px;
-    right: 30px;
+    top: 0.62em;
+    right: 1.87em;
     color: #f1f1f1;
-    font-size: 40px;
+    font-size: 2.5em;
     font-weight: bold;
     transition: 0.3s;
     z-index: 2;
@@ -321,14 +321,14 @@ h6 {
 
 .close:hover,
 .close:focus {
-    color: #bbb;
     text-decoration: none;
     cursor: pointer;
+    color: #ffffff;
 }
 
 /* 100% Image Width on Smaller Screens */
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 43.75em) {
     .modal-content {
         width: 100%;
     }
@@ -351,25 +351,25 @@ h6 {
 
  .offcanvas-header img { 
    display: block; 
-   width: 75px; 
-   height: 75px; 
+   width: 4.68em; 
+   height: 4.68em; 
    border-radius: 50%; 
    margin: 0 auto; 
    background: black; 
-   border-top: 5px solid #3457D5; 
-   border-right: 5px solid #1E90FF; 
-   border-bottom: 5px solid #67E6EC; 
-   border-left: 5px solid blue; 
+   border-top: 0.31em solid #3457D5; 
+   border-right: 0.31em solid #1E90FF; 
+   border-bottom: 0.31em solid #67E6EC; 
+   border-left: 0.31em solid blue; 
 
  } 
  
  .offcanvas-header h5 { 
    color: #ffffff; 
-   margin: 10px 0 5px;
+   margin: 0.62em 0 0.31em;
    text-align: center;
  }
  
  .offcanvas-header p { 
    color: rgb(206, 240, 253); 
-   font-size: 14px;
+   font-size: 0.87em;
  }
