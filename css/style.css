@@ -200,6 +200,21 @@ h6 {
     background: rgba(72, 74, 102, 0.657);
 }
 
+.link {
+    
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgba(4, 23, 194, 0.657);
+    font-weight: 900;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    padding: 1px;
+}
+
 .content {
     position: absolute;
     top: 50%;
