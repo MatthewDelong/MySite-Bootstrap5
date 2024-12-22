@@ -23,6 +23,12 @@ body {
     overflow-y: auto;
 }
 
+.card-img-top {
+    height: 40vh;
+    width: 100%;
+    object-fit: cover;
+}
+
 .masthead {
   height: 25vh;
   min-height: 15.62em;
