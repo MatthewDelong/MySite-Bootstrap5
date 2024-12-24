@@ -3,7 +3,6 @@
         autoplayhoverpause: true,
         autoplaytimeout: 100,
         items: 6,
-        singleItem: 1,
         nav: true,
         loop: true,
         responsiveClass: true,
