@@ -2,8 +2,9 @@
 
 $(".owl-carousel").owlCarousel({
   autoplay: true,
-  autoplayhoverpause: true,
-  autoplaytimeout: 100,
+  autoplayHoverPause: true,
+  smartSpeed: 1000,
+  autoplayTimeout: 1500,
   items: 6,
   nav: true,
   loop: true,
