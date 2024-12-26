@@ -1,20 +1,35 @@
-# MySite-Bootstrap5 10/05/2024
+# MySite-Bootstrap5 01/01/2025
+
+---
 
 Live Site:-[here](https://matthews-world.netlify.app/)
 
 ---
 
-PC Browser 
+All images/photos and logos are either AI generated or taken by myself (Matthew Delong). 
+Nothing has been downloaded from the internet.
 
-![Gallery](https://github.com/MatthewDelong/MySite-Bootstrap5/assets/1036327/440e0871-0e99-410a-9931-20a13f4041f0)
+AI generated using : Microsoft Designer App.
+
+Mobile phone used for:  Photos,
+                        Sketch to Image,
+                        Portrait Studio.
+
+---
+Animate/Transistions for Owl-Carousel:
+By default the Animate is disabled, to enable do the following.
+    1. In the index.html file comment out line: 108 and uncomment line: 109.
+    2. Comment out Line 332 of the index.html and uncomment line 333.
+
+For transition effects click [here](https://animate.style/)
 
 ---
 
-Mobile Browser  (Desktop Mode)
+PC Browser 
 
-![main](https://github.com/MatthewDelong/MySite-Bootstrap5/assets/1036327/ae88fd7e-30f3-46fa-844b-5f54a454f06c)
 
-![navbar](https://github.com/MatthewDelong/MySite-Bootstrap5/assets/1036327/8021abfd-5589-4228-881e-e84a1fcb3fe0)
+
+---
 
 
 
