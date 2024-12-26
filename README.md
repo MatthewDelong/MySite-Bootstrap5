@@ -21,7 +21,7 @@ Mobile phone used for:
 ---
 
 **Owl-Carousel**:-[here](https://owlcarousel2.github.io/OwlCarousel2/)
-- With Animate enabled it will only show one slide at at time, it will not work with multiple images at once.
+- With Animate enabled it will only show one slide at a time, it will not work with multiple images at once.
 
 **Animate/Transitions for Owl-Carousel**:
 By default the Animate is disabled, to enable do the following.
