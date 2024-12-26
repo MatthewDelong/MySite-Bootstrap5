@@ -26,7 +26,7 @@ Mobile phone used for:
 **Animate/Transitions for Owl-Carousel**:
 By default the Animate is disabled, to enable do the following.
 - 1. In the index.html file comment out line: 108 and uncomment line: 109.
-- 2. Comment out Line 332 of the index.html and uncomment line 333.
+- 2. Comment out Line 331 of the index.html and uncomment line 332.
 
 For **transition effects** click [here](https://animate.style/)
 
