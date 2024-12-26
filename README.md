@@ -27,7 +27,7 @@ For transition effects click [here](https://animate.style/)
 
 PC Browser 
 
-
+![Site-2025](https://github.com/user-attachments/assets/3aecfb8a-8917-44b2-a8c6-6553a19fe215)
 
 ---
 
