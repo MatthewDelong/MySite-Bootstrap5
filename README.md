@@ -34,8 +34,7 @@ For **transition effects** click [here](https://animate.style/)
 
 **PC Browser** 
 
-![Site-2025](https://github.com/user-attachments/assets/2c6ea9d0-d80a-47df-83ff-757c188b207b)
-
+![Site-2025](https://github.com/user-attachments/assets/65149399-1334-43d0-bbac-08751a6afa7c)
 
 ---
 
