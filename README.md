@@ -7,7 +7,7 @@
 ---
 
 All images/photos and logos are either AI generated or taken by myself (Matthew Delong). 
-Nothing has been downloaded from the internet.
+Only the Logos for the sites on the home page are downloaded.
 
 AI generated using : 
 - Microsoft Designer App.
