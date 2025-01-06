@@ -27,7 +27,7 @@ body {
 .masthead {
   height: 25vh;
   min-height: 250px;
-  background-image: url("/images/frontpage/banner.jpg");
+  background-image: url("/images/banner/banner.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
