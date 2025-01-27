@@ -24,6 +24,40 @@ body {
   overflow-y: auto;
 }
 
+/* Owl slider nav */
+
+.owl-carousel .item-video {
+  height: 200px;
+  width: 400px;
+  padding-right: 1px;
+}
+
+.owl-prev {
+  left: -30px;
+}
+
+.owl-next {
+  right: -30px;
+}
+
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 50px;
+}
+
+.owl-prev span,
+.owl-next span {
+  font-size: 80px;
+  color: white;
+}
+
+.owl-theme,
+.owl-nav[class*="owl-"]:hover {
+  background: transparent;
+}
+/* Owl slider nav end */
+
 .masthead {
   height: 25vh;
   min-height: 250px;
@@ -227,11 +261,21 @@ h5 {
 }
 
 .card {
-  padding-bottom: 2pc;
+  padding-bottom: 2px;
   border-radius: 1.5rem;
   border-radius: 5px;
   border: 2px solid #67e6ec;
   box-shadow: 0 0 20px rgba(103, 230, 236, 1);
+}
+
+.card-1 {
+  Width: 305px;
+  height: 205px;
+  position: center;
+  margin-right: 25%;
+  border-radius: 1.5rem;
+  border-radius: 5px;
+  border: 2px solid #67e6ec;
 }
 
 .card-body {
