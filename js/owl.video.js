@@ -1,11 +1,12 @@
 $('.owl-carousel').owlCarousel({
+
     items:1,
     merge:false,
     loop:true,
     margin:10,
     autoWidth: true,
     video:true,
-    videoWidth: 300,
+    videoWidth:300,
     videoHeight:200,
     lazyLoad:false,
     center:true,
@@ -16,9 +17,9 @@ $('.owl-carousel').owlCarousel({
             nav: false,
         },
         600:{
-            items:4,
+            items:3,
             dots: true,
-            nav: false,
+            nav: true,
         }
     }
 })
