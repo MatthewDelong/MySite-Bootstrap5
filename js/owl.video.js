@@ -1,7 +1,6 @@
 $('.owl-carousel').owlCarousel({
-
     items:1,
-    merge:false,
+    merge:true,
     loop:true,
     margin:10,
     autoWidth: true,
