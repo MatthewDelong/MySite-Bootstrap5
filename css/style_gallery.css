@@ -24,23 +24,6 @@ body {
   overflow-y: auto;
 }
 
-/* Owl Youtube */
-.item-video {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  height: 0;
-  overflow: hidden;
-}
-
-.item-video iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-/* Owl Youtube End*/
-
 /* Owl slider nav */
 
 .owl-carousel .item-video {
@@ -104,6 +87,12 @@ body {
 
 .border-info {
   border: 2px solid #67e6ec;
+  border-radius: 5px;
+}
+
+.border-info-bottom {
+  border-bottom: 2px solid #67e6ec;
+  border-top: 2px solid #67e6ec;
   border-radius: 5px;
 }
 
