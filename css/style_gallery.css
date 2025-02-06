@@ -103,6 +103,29 @@ p {
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
+/* Gold text gradient */
+.golden-base {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight:bold;
+  -webkit-margin-before: 0.3em; 
+  -webkit-margin-after: 0.2em;
+}
+.golden1 {
+  background-image: -webkit-linear-gradient(#FFF65C, #3A2C00);
+  text-shadow: -0.02em -0.03em 0.005em rgba(255, 223, 0, 0.60);
+}
+.golden2 {
+  background-image: -webkit-linear-gradient(#E8D800, #E0CF00 52%, #A86800 55%, #A86800 );
+  text-shadow: -0.02em -0.03em 0.005em rgba(255, 255, 0, 0.56);
+}
+.golden3 {
+  background-image: -webkit-linear-gradient(#FFF65C 45%, #9A8000 75%);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.09),
+    -1px -1px 0 rgba(255, 220, 0, 0.670);
+  font-size:3em;
+}
+
 h1 {
   font-family: "diranista", sans-serif;
   font-size: 48px;
