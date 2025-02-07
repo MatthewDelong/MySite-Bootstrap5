@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 * {
   padding: 0;
@@ -13,19 +13,19 @@
 }
 
 body {
-  background-image: url('https://source.unsplash.com/1600x900/?landscape');
+  background-image: url("https://source.unsplash.com/1600x900/?landscape");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  height:100%;
-  width:100%;
+  height: 100%;
+  width: 100%;
   overflow-y: auto;
 }
 
 .masthead {
   height: 25vh;
   min-height: 250px;
-  background-image: url('/images/banner/banner.jpg');
+  background-image: url("/images/banner/banner.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -37,7 +37,7 @@ body {
   right: 20px;
   display: none;
   z-index: 2;
-  }
+}
 
 .fw-bold {
   font-weight: bold;
@@ -47,6 +47,36 @@ body {
 .border-info {
   border: 2px solid #67e6ec;
   border-radius: 5px;
+}
+
+/* Gold text gradient */
+.golden-base {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  -webkit-margin-before: 0.3em;
+  -webkit-margin-after: 0.2em;
+}
+.golden1 {
+  background-image: -webkit-linear-gradient(#fff65c, #3a2c00);
+  text-shadow: -0.02em -0.03em 0.005em rgba(255, 223, 0, 0.6);
+  font-size: 2.5em;
+}
+.golden2 {
+  background-image: -webkit-linear-gradient(
+    #e8d800,
+    #e0cf00 52%,
+    #a86800 55%,
+    #a86800
+  );
+  text-shadow: -0.02em -0.03em 0.005em rgba(255, 255, 0, 0.56);
+  font-size: 2.5em;
+}
+.golden3 {
+  background-image: -webkit-linear-gradient(#fff65c 45%, #524402 75%);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.09),
+    -1px -1px 0 rgba(255, 220, 0, 0.67);
+  font-size: 2.5em;
 }
 
 h1 {
@@ -118,20 +148,20 @@ h5 {
 .navbar-nav a:hover {
   color: rgba(103, 230, 236);
 }
- .offcanvas-header img { 
-   display: block; 
-   width: 75px; 
-   height: 75px; 
-   border-radius: 50%; 
-   margin: 0 auto; 
-   background: black; 
-   border-top: 5px solid #3457D5; 
-   border-right: 5px solid #1E90FF; 
-   border-bottom: 5px solid #67E6EC; 
-   border-left: 5px solid blue; 
- } 
- 
- .btn1 {
+.offcanvas-header img {
+  display: block;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background: black;
+  border-top: 5px solid #3457d5;
+  border-right: 5px solid #1e90ff;
+  border-bottom: 5px solid #67e6ec;
+  border-left: 5px solid blue;
+}
+
+.btn1 {
   height: 45px;
   width: 100%;
   text-align: center;
@@ -166,18 +196,17 @@ h5 {
   background: rgba(72, 74, 102, 0.657);
 }
 
+.offcanvas-header h5 {
+  color: #ffffff;
+  margin: 10px 0 5px;
+  text-align: center;
+}
 
- .offcanvas-header h5 { 
-   color: #ffffff; 
-   margin: 10px 0 5px;
-   text-align: center;
- }
- 
- .offcanvas-header p { 
-   color: rgb(206, 240, 253); 
-   font-size: 14px;
- }
- .card {
+.offcanvas-header p {
+  color: rgb(206, 240, 253);
+  font-size: 14px;
+}
+.card {
   background: #000000d0;
   color: whitesmoke;
   padding: 2em;
@@ -191,7 +220,6 @@ h5 {
 .search {
   display: flex;
   align-items: center;
-  
 }
 
 button_1 {
@@ -245,7 +273,7 @@ h1.temp {
   position: relative;
 }
 
-.weather.loading:after{
+.weather.loading:after {
   visibility: visible;
   content: "Loading....";
   color: white;
@@ -261,18 +289,18 @@ h1.temp {
 .searchbar:hover {
   transform: scale(1.07);
 }
-.separator{
-height: 1px;
-width: 100%;
-margin: 25px 0;
-background: #ccc;
-position: relative;
-display: flex;
-align-items: center;
-justify-content: center;
+.separator {
+  height: 1px;
+  width: 100%;
+  margin: 25px 0;
+  background: #ccc;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-image{
-  height:50px;
+image {
+  height: 50px;
   width: 50px;
 }
