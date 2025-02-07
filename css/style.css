@@ -107,13 +107,13 @@ p {
   background-image: -webkit-linear-gradient(#FFF65C 45%, #9A8000 75%);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.09),
     -1px -1px 0 rgba(255, 220, 0, 0.670);
-  font-size:3em;
+  font-size:2.5em;
 }
 
 h1 {
-  font-family: "diranista", sans-serif;
-  font-size: 3em;
-  text-decoration: underline;
+  font-family: "Sans-Serif", sans-serif;
+  font-size: 2.5em;
+  /*text-decoration: underline;*/
 }
 
 h2 {
