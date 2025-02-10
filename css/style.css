@@ -75,6 +75,7 @@ body {
 }
 
 .fw-bold {
+  font-family: "Sans-Serif", sans-serif;
   font-weight: bold;
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
@@ -112,7 +113,6 @@ p {
   font-size: 2.5em;
 }
 .golden3 {
-  background-image: -webkit-linear-gradient(#fff65c 45%, #524402 75%);
   -webkit-text-stroke: 0.01em white;
   font-size: 2.5em;
   text-shadow:
@@ -307,7 +307,7 @@ h6 {
   border: none;
   outline: none;
   color: white;
-  background-color: rgba(28, 31, 56, 0.657);
+  background-color: transparent;
   font-weight: 900;
   z-index: 1;
   position: relative;
