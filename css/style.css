@@ -315,26 +315,6 @@ h6 {
   padding: 6px;
 }
 
-.btn1 ::before,
-.btn1 ::after {
-  position: absolute;
-  content: "";
-  z-index: -1;
-}
-
-.btn1 ::after {
-  height: 0;
-  top: 0;
-  left: 0;
-  transition-duration: 0.6s;
-  width: 100%;
-}
-
-.btn1:hover ::after {
-  height: 100%;
-  background: rgba(72, 74, 102, 0.657);
-}
-
 .link {
   width: 100%;
   text-align: center;
