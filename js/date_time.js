@@ -7,7 +7,7 @@ function updateDateTime() {
         day: 'numeric', 
         hour: '2-digit', 
         minute: '2-digit', 
-        second: '2-digit' 
+        
     };
     const formattedDateTime = now.toLocaleDateString('en-GB', options);
     document.getElementById('currentDateTime').textContent = formattedDateTime;
