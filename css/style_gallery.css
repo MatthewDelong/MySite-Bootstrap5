@@ -98,14 +98,12 @@ body {
 
 p {
   font-family: "Poppins", sans-serif;
-  font-size: 24px;
-  color: #67e6ec;
-  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
 /* Gold text gradient */
 .golden-base {
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
   -webkit-margin-before: 0.3em;

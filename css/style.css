@@ -92,6 +92,7 @@ p {
 /* Gold text gradient */
 .golden-base {
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
   -webkit-margin-before: 0.3em;
