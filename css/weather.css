@@ -12,20 +12,24 @@
   font-display: swap;
 }
 
+html,
 body {
-  background-image: url("https://source.unsplash.com/1600x900/?landscape");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(7, 7, 161, 1) 50%,
+      rgba(0, 0, 0, 1) 100%
+    )
+    no-repeat;
+  min-height: 100%;
+  min-width: 100%;
   overflow-y: auto;
 }
 
 .masthead {
   height: 25vh;
-  min-height: 250px;
-  background-image: url("/images/banner/banner.jpg");
+  min-height: 15.62em;
+  background-image: url("/images/banner/banner-1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -52,6 +56,7 @@ body {
 /* Gold text gradient */
 .golden-base {
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
   -webkit-margin-before: 0.3em;
@@ -73,16 +78,75 @@ body {
   font-size: 2.5em;
 }
 .golden3 {
-  background-image: -webkit-linear-gradient(#fff65c 45%, #524402 75%);
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.09),
-    -1px -1px 0 rgba(255, 220, 0, 0.67);
+  -webkit-text-stroke: 0.01em white;
   font-size: 2.5em;
+  text-shadow:
+    0 3px 20px red,
+    0 0 20px red,
+    0 0 10px orange,
+    4px -5px 6px yellow,
+    -4px -10px 10px yellow,
+    0 -10px 30px yellow;
+  animation: animate 2s infinite alternate linear;
 }
+
+@keyframes  animate {
+  0% {
+    text-shadow:
+      0 3px 20px red,
+      0 0 20px red,
+      0 0 10px orange,
+      0 0 0 yellow,
+      0 0 5px yellow,
+      -2px -5px 5px yellow,
+      4px -10px 10px yellow;
+  }
+  25% {
+    text-shadow:
+      0 3px 20px red,
+      0 0 30px red,
+      0 0 20px orange,
+      0 0 5px yellow,
+      -2px -5px 5px yellow,
+      3px -10px 10px yellow,
+      -4px -15px 20px yellow;
+  }
+  50% {
+    text-shadow:
+      0 3px 20px red,
+      0 0 20px red,
+      0 -5px 10px orange,
+      -2px -5px 5px yellow,
+      3 -10px 10px yellow,
+      -4px -15px 20px yellow,
+      2px -20px 30px rgba(255,255,0,0.5);
+  }
+  75% {
+    text-shadow:
+      0 3px 20px red,
+      0 0 20px red,
+      0 -5px 10px orange,
+      3 -5px 5px yellow,
+      -4px -10px 10px yellow,
+      2px -20px 30px rgba(255,255,0,0.5),
+      0 -25px 40px rgba(255,255,0,0);
+  }
+  100% {
+    text-shadow:
+      0 3px 20px red,
+      0 0 20px red,
+      0 0 10px orange,
+      0 0 0 yellow,
+      0 0 5px yellow,
+      -2px -5px 5px yellow,
+      4px -10px 10px yellow;
+  }
+}
+
 
 h1 {
   font-family: "diranista", sans-serif;
   font-size: 48px;
-  text-decoration: underline;
 }
 
 h5 {
@@ -217,90 +281,4 @@ h5 {
   justify-content: center;
 }
 
-.search {
-  display: flex;
-  align-items: center;
-}
 
-button_1 {
-  margin: 1.7em;
-  border-radius: 50%;
-  border: none;
-  height: 45px;
-  width: 45px;
-  outline: none;
-  background: #7c7c7c2b;
-  color: whitesmoke;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-}
-
-input.searchbar {
-  border: 2px solid whitesmoke;
-  outline: none;
-  padding: 0.4em 1em;
-  border-radius: 24px;
-  background: #7c7c7c2b;
-  color: whitesmoke;
-  font-family: inherit;
-  font-size: 100%;
-  width: calc(100% - 100px);
-}
-
-button_1:hover {
-  background: white;
-  color: black;
-}
-
-h1.temp {
-  margin: 0;
-  margin-bottom: 0.4em;
-}
-
-.flex {
-  display: flex;
-  align-items: center;
-}
-
-.description {
-  text-transform: capitalize;
-  margin-left: 8px;
-}
-
-.weather.loading {
-  visibility: hidden;
-  max-height: 20px;
-  position: relative;
-}
-
-.weather.loading:after {
-  visibility: visible;
-  content: "Loading....";
-  color: white;
-  position: absolute;
-  top: 0;
-  left: 20px;
-}
-
-.card:hover {
-  box-shadow: 5px 5px 5px #00000056;
-}
-
-.searchbar:hover {
-  transform: scale(1.07);
-}
-.separator {
-  height: 1px;
-  width: 100%;
-  margin: 25px 0;
-  background: #ccc;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-image {
-  height: 50px;
-  width: 50px;
-}

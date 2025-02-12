@@ -1,53 +1,38 @@
-let weather = {
-    "apikey": '0cddfd47649d15c0808350667e99c538',
-    fetchWeather : function (city) {
-        fetch("https://api.openweathermap.org/data/2.5/weather?q=" 
-        + city 
-        + "&units=metric&appid=" 
-        + this.apikey)
-        .then((Response) => Response.json())
-        .then((data) => this.displayWeather(data));
-    },
+// script.js
+const apiKey = "0cddfd47649d15c0808350667e99c538"; // Replace with your API key
+const weatherForm = document.getElementById("weatherForm");
+const weatherDiv = document.getElementById("weather");
 
-    displayWeather: function(data) {
-        const { name } = data;
-        const { icon, description } = data.weather[0];
-        const { temp, humidity } = data.main;
-        const { speed } = data.wind;
-        document.querySelector(".city").innerText = "" + name;
-        document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" + icon + ".png";
-        document.querySelector(".description").innerText = description;
-        document.querySelector(".temp").innerText = temp + "°C";
-        document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
-        document.querySelector(".wind").innerText = "Wind Speed: " + speed + " km/h";
-        document.querySelector(".weather").classList.remove("loading");
-        document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + name + "')"
-    },
+weatherForm.addEventListener("submit", (e) => {
+  e.preventDefault(); // Prevent form submission
 
-    search : function() {
-        this.fetchWeather(document.querySelector(".searchbar").value);
-    }
-};
+  const city = document.getElementById("city").value;
+  const country = document.getElementById("country").value;
+  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${apiKey}&units=metric`;
 
-document.querySelector(".search button_1").addEventListener("click", function() {
-    weather.search();
+  fetch(apiUrl)
+    .then((response) => response.json())
+    .then((data) => {
+      if (data.cod === 200) {
+        const weatherIcon = data.weather[0].icon; // Get weather icon code
+        const iconUrl = `http://openweathermap.org/img/wn/${weatherIcon}@2x.png`; // Icon URL
+
+        weatherDiv.innerHTML = `          
+ <div class="card-body">            
+ <h2>${data.name}, ${data.sys.country}</h2>            
+ <img src="${iconUrl}" alt="${data.weather[0].description}">            
+ <p class="fs-4">${data.main.temp}°C</p>            
+ <p>${data.weather[0].description}</p>            
+ <p>Humidity: ${data.main.humidity}%</p>            
+ <p>Wind: ${data.wind.speed} m/s</p>          
+ </div>        
+ `;
+      } else {
+        weatherDiv.innerHTML = `<p class="text-danger">${data.message}</p>`;
+      }
+    })
+    .catch((error) => {
+      console.error("Error fetching weather data:", error);
+      weatherDiv.innerHTML = `<p class="text-danger">Failed to load weather data.</p>`;
+    });
 });
-
-document.querySelector(".searchbar").addEventListener("keyup", function(event){
-    if(event.key == "Enter"){
-        weather.search();
-    }
-});
-
-weather.fetchWeather("London,UK");
-locationBtn.addEventListener("click", () =>{
-    if(navigator.geolocation){
-        navigator.geolocation.getCurrentPosition(onSuccess, onError);
-    }else{
-        alert("Your browser not support geolocation api");
-    }
-});
-
-function speedConverter(valNum) {
-    document.getElementById("outputMPH").innerHTML=valNum/1.609344;
-}
