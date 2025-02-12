@@ -145,8 +145,14 @@ body {
 
 
 h1 {
+  font-family: "Sans-Serif", sans-serif;
+  font-size: 2.5em;
+}
+
+h2 {
   font-family: "diranista", sans-serif;
-  font-size: 48px;
+  font-size: 2.5em;
+  font-weight: bold;
 }
 
 h5 {
