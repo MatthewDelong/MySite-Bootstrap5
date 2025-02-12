@@ -232,7 +232,7 @@ h5 {
   border: none;
   outline: none;
   color: white;
-  background-color: rgba(28, 31, 56, 0.657);
+  background-color: transparent;
   font-weight: 500;
   z-index: 1;
   position: relative;

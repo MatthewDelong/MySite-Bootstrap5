@@ -21,16 +21,12 @@ weatherForm.addEventListener("submit", (e) => {
  <div class="card-body">            
  <h2>${data.name}, ${data.sys.country}</h2>            
  <img src="${iconUrl}" alt="${data.weather[0].description}">      
- 
  <p>${data.weather[0].description}</p> 
- 
- <p class="fs-4">${data.main.temp}°C</p>            
-  <p>Feels Like: ${data.main.feels_like}°C</p> 
-  
-  <p>Pressure: ${data.main.pressure}mb</p> 
- 
+ <p class="fs-4">${data.main.temp}°C</p>
+ <p>Feels Like: ${data.main.feels_like}°C</p> 
+ <p>Pressure: ${data.main.pressure}mb</p> 
  <p>Humidity: ${data.main.humidity}%</p>            
- <p>Wind: ${data.wind.speed *2.238.toFixed(0)} mph</p>          
+ <p>Wind: ${data.wind.speed * (2.238).toFixed(0)} mph</p>          
  </div>        
  `;
       } else {
