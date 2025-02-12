@@ -24,7 +24,7 @@ weatherForm.addEventListener("submit", (e) => {
  <p class="fs-4">${data.main.temp}°C</p>            
  <p>${data.weather[0].description}</p>            
  <p>Humidity: ${data.main.humidity}%</p>            
- <p>Wind: ${data.wind.speed} m/s</p>          
+ <p>Wind: ${data.wind.speed *2.238} mph</p>          
  </div>        
  `;
       } else {
