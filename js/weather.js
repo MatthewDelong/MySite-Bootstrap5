@@ -24,11 +24,12 @@ weatherForm.addEventListener("submit", (e) => {
  <p class="fs-4">${data.main.temp}°C</p>            
  <p>${data.weather[0].description}</p>            
  <p>Humidity: ${data.main.humidity}%</p>            
- <p>Wind: ${data.wind.speed *2.238} mph</p>          
+ <p>Wind: ${data.wind.speed *2.238.toFixed(0)} mph</p>          
  </div>        
  `;
       } else {
-        weatherDiv.innerHTML = `<p class="text-danger">${data.message}</p>`;
+        weatherDiv.innerHTML = `<p class="text-danger">${data.message}</p>
+        `;
       }
     })
     .catch((error) => {
