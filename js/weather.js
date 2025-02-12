@@ -19,7 +19,7 @@ weatherForm.addEventListener("submit", (e) => {
 
         weatherDiv.innerHTML = `          
  <div class="card-body">            
- <h2>${data.name}, ${data.sys.country}</h2>            
+ <h3>${data.name}, ${data.sys.country}</h3>            
  <img src="${iconUrl}" alt="${data.weather[0].description}">      
  <p>${data.weather[0].description}</p> 
  <p class="fs-4">${data.main.temp}°C</p>
