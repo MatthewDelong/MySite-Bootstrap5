@@ -26,8 +26,8 @@ Mobile phone used for:
 **Animate/Transitions for Owl-Carousel**:
 By default the Animate is disabled, to enable do the following.
 - 1. In the index.html file comment out line: 117 and uncomment line: 118.
-- 2. Uncomment line:123 and comment out line:122 (follow line: 123 and change your proceeding img lines)
-- 3. Comment out Line 341 of the index.html and uncomment line 342.
+- 2. Uncomment line:123 and comment out line:122 (follow line: 123 and change your proceeding img lines). Simply change src to data-src and add owl-lazy to the class.
+- 3. Comment out Line 340 of the index.html and uncomment line 341.
 
 These two lines are also included in News and Coding htmls.
 
