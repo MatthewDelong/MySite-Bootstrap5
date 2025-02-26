@@ -1,4 +1,4 @@
-# MySite-Bootstrap5 01/01/2025
+# MySite-Bootstrap5 26/02/2025
 
 ---
 
@@ -25,8 +25,11 @@ Mobile phone used for:
 
 **Animate/Transitions for Owl-Carousel**:
 By default the Animate is disabled, to enable do the following.
-- 1. In the index.html file comment out line: 119 and uncomment line: 120.
-- 2. Comment out Line 341 of the index.html and uncomment line 342.
+- 1. In the index.html file comment out line: 117 and uncomment line: 118.
+- 2. Uncomment line:123 and comment out line:122 (follow line: 123 and change your proceeding img lines)
+- 3. Comment out Line 341 of the index.html and uncomment line 342.
+
+These two lines are also included in News and Coding htmls.
 
 For **transition effects** click [here](https://animate.style/)
 
