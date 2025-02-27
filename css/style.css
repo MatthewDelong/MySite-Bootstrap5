@@ -28,13 +28,13 @@ body {
 .ticker-container {
   overflow: hidden;
   white-space: nowrap;
-  border-radius: 50px;
-  background: rgb(0, 0, 0);
+  border-radius: 15px;
+  border: 0.125em solid #67e6ec;
   background: linear-gradient(
-  157deg,
-  rgba(0, 0, 0, 1) 0%,
-  rgba(52, 52, 235, 1) 50%,
-  rgba(0, 0, 0, 1) 100%
+    157deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(52, 52, 235, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
   );
   padding: 10px 0;
 }
@@ -43,8 +43,8 @@ body {
   display: inline-block;
   color: white;
   padding-left: 100%;
-  animation: ticker-scroll 15s linear infinite; /* Adjusted to 10s */
-  }
+  animation: ticker-scroll 15s linear infinite; /* Adjusted to 15s */
+}
 
 .ticker-content span {
   margin-right: 50px;
@@ -53,10 +53,10 @@ body {
 
 @keyframes ticker-scroll {
   0% {
-  transform: translateX(0%);
+    transform: translateX(0%);
   }
   100% {
-  transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 }
 
@@ -152,66 +152,33 @@ p {
 .golden3 {
   -webkit-text-stroke: 0.01em white;
   font-size: 2.5em;
-  text-shadow:
-    0 3px 20px red,
-    0 0 20px red,
-    0 0 10px orange,
-    4px -5px 6px yellow,
-    -4px -10px 10px yellow,
-    0 -10px 30px yellow;
+  text-shadow: 0 3px 20px red, 0 0 20px red, 0 0 10px orange,
+    4px -5px 6px yellow, -4px -10px 10px yellow, 0 -10px 30px yellow;
   animation: animate 2s infinite alternate linear;
 }
 
-@keyframes  animate {
+@keyframes animate {
   0% {
-    text-shadow:
-      0 3px 20px red,
-      0 0 20px red,
-      0 0 10px orange,
-      0 0 0 yellow,
-      0 0 5px yellow,
-      -2px -5px 5px yellow,
-      4px -10px 10px yellow;
+    text-shadow: 0 3px 20px red, 0 0 20px red, 0 0 10px orange, 0 0 0 yellow,
+      0 0 5px yellow, -2px -5px 5px yellow, 4px -10px 10px yellow;
   }
   25% {
-    text-shadow:
-      0 3px 20px red,
-      0 0 30px red,
-      0 0 20px orange,
-      0 0 5px yellow,
-      -2px -5px 5px yellow,
-      3px -10px 10px yellow,
-      -4px -15px 20px yellow;
+    text-shadow: 0 3px 20px red, 0 0 30px red, 0 0 20px orange, 0 0 5px yellow,
+      -2px -5px 5px yellow, 3px -10px 10px yellow, -4px -15px 20px yellow;
   }
   50% {
-    text-shadow:
-      0 3px 20px red,
-      0 0 20px red,
-      0 -5px 10px orange,
-      -2px -5px 5px yellow,
-      3 -10px 10px yellow,
-      -4px -15px 20px yellow,
-      2px -20px 30px rgba(255,255,0,0.5);
+    text-shadow: 0 3px 20px red, 0 0 20px red, 0 -5px 10px orange,
+      -2px -5px 5px yellow, 3 -10px 10px yellow, -4px -15px 20px yellow,
+      2px -20px 30px rgba(255, 255, 0, 0.5);
   }
   75% {
-    text-shadow:
-      0 3px 20px red,
-      0 0 20px red,
-      0 -5px 10px orange,
-      3 -5px 5px yellow,
-      -4px -10px 10px yellow,
-      2px -20px 30px rgba(255,255,0,0.5),
-      0 -25px 40px rgba(255,255,0,0);
+    text-shadow: 0 3px 20px red, 0 0 20px red, 0 -5px 10px orange,
+      3 -5px 5px yellow, -4px -10px 10px yellow,
+      2px -20px 30px rgba(255, 255, 0, 0.5), 0 -25px 40px rgba(255, 255, 0, 0);
   }
   100% {
-    text-shadow:
-      0 3px 20px red,
-      0 0 20px red,
-      0 0 10px orange,
-      0 0 0 yellow,
-      0 0 5px yellow,
-      -2px -5px 5px yellow,
-      4px -10px 10px yellow;
+    text-shadow: 0 3px 20px red, 0 0 20px red, 0 0 10px orange, 0 0 0 yellow,
+      0 0 5px yellow, -2px -5px 5px yellow, 4px -10px 10px yellow;
   }
 }
 
