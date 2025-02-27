@@ -9,8 +9,9 @@
 All images/photos and logos are either AI generated or taken by myself (Matthew Delong). 
 Only the Logos for the sites on the home page are downloaded.
 
-AI generated using : 
+AI images generated using : 
 - Microsoft Designer App.
+- Leonardo.ai App.
 
 Mobile phone used for: 
 - Photos.
@@ -25,11 +26,11 @@ Mobile phone used for:
 
 **Animate/Transitions for Owl-Carousel**:
 By default the Animate is disabled, to enable do the following.
-- 1. In the index.html file comment out line: 117 and uncomment line: 118.
-- 2. Uncomment line:123 and comment out line:122 (follow line: 123 and change your proceeding img lines). Simply change src to data-src and add owl-lazy to the class.
-- 3. Comment out Line 340 of the index.html and uncomment line 341.
+- 1. In the html file comment out line: 117 and uncomment line: 118.
+- 2. Line 123 change <img src= to <img data-src= and add owl-lazy to class="card-img-top".
+- 3. Line 351 change owl.carousel.slider.js to owl.carousel.slider-with-animate.js.
 
-These two lines are also included in News and Coding htmls.
+This can be applied to index.html, news.html and coding.html but line numbers will change in all files.
 
 For **transition effects** click [here](https://animate.style/)
 
@@ -41,9 +42,3 @@ For **transition effects** click [here](https://animate.style/)
 
 
 ---
-
-
-
-
-
-
