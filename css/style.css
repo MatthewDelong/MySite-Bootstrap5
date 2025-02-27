@@ -28,6 +28,7 @@ body {
 .ticker-container {
   overflow: hidden;
   white-space: nowrap;
+  border-radius: 50px;
   background: rgb(0, 0, 0);
   background: linear-gradient(
   157deg,
