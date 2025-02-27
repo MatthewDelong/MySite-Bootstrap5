@@ -37,6 +37,14 @@ body {
     rgba(0, 0, 0, 1) 100%
   );
   padding: 10px 0;
+  position: relative;
+}
+
+.ticker-header {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  text-decoration:underline;
 }
 
 .ticker-content {
@@ -59,6 +67,29 @@ body {
     transform: translateX(-100%);
   }
 }
+
+.ticker-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px; /* Adjust the width of the fade effect */
+  height: 100%;
+  background: linear-gradient(to right, #000000, transparent); /* Gradient to cut off text */
+  z-index: 1;
+}
+
+.ticker-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px; /* Adjust the width of the fade effect */
+  height: 100%;
+  background: linear-gradient(to left, #000000, transparent); /* Gradient to cut off text */
+  z-index: 1;
+}
+
 
 .card-img-top {
   height: 40vh;
