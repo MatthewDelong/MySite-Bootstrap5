@@ -24,6 +24,41 @@ body {
   overflow-y: auto;
 }
 
+/* ticker */
+.ticker-container {
+  overflow: hidden;
+  white-space: nowrap;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+  157deg,
+  rgba(0, 0, 0, 1) 0%,
+  rgba(52, 52, 235, 1) 50%,
+  rgba(0, 0, 0, 1) 100%
+  );
+  padding: 10px 0;
+}
+
+.ticker-content {
+  display: inline-block;
+  color: white;
+  padding-left: 100%;
+  animation: ticker-scroll 10s linear infinite; /* Adjusted to 10s */
+  }
+
+.ticker-content span {
+  margin-right: 50px;
+  font-size: 1.2rem;
+}
+
+@keyframes ticker-scroll {
+  0% {
+  transform: translateX(0%);
+  }
+  100% {
+  transform: translateX(-100%);
+  }
+}
+
 .card-img-top {
   height: 40vh;
   width: 100%;
