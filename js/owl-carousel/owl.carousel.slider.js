@@ -3,6 +3,7 @@
 $(".owl-carousel").owlCarousel({
   autoplay: true,
   autoplayHoverPause: true,
+  autoWidth: true,
   smartSpeed: 3000,
   autoplayTimeout: 4500,
   items: 6,
