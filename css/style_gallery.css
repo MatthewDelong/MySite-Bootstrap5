@@ -221,6 +221,11 @@ h5 {
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
+h6 {
+  font-size: 0.7em;
+  font-style: italic;
+}
+
 .canva {
   min-height: 100%;
   min-width: 100%;

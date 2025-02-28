@@ -159,6 +159,11 @@ h5 {
   font-family: "diranista", sans-serif;
 }
 
+h6 {
+  font-size: 0.7em;
+  font-style: italic;
+}
+
 .canva {
   height: 100%;
   width: 100%;
