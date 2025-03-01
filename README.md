@@ -25,10 +25,10 @@ Mobile phone used for:
 - With Animate enabled it will only show one slide at a time, it will not work with multiple images at once.
 
 **Animate/Transitions for Owl-Carousel**:
-By default the Animate is disabled, to enable do the following.
-- 1. In the html file comment out line: 117 and uncomment line: 118.
+By default the Animate is disabled, to enable do the following. The instructions coincide with index.html file for reference.
+- 1. In the html file comment out line: 120 and uncomment line: 121.
 - 2. Line 123 change <img src= to <img data-src= and add owl-lazy to class="card-img-top".
-- 3. Line 351 change owl.carousel.slider.js to owl.carousel.slider-with-animate.js.
+- 3. Line 349 change owl.carousel.slider.js to owl.carousel.slider-with-animate.js.
 
 This can be applied to index.html, news.html and coding.html but line numbers will change in all files.
 
