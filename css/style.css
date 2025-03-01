@@ -44,7 +44,7 @@ body {
   text-align: center;
   font-weight: bold;
   color: white;
-  text-decoration:underline;
+  text-decoration: underline;
 }
 
 .ticker-content {
@@ -69,27 +69,34 @@ body {
 }
 
 .ticker-container::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 80px; /* Adjust the width of the fade effect */
   height: 100%;
-  background: linear-gradient(to right, #000000, transparent); /* Gradient to cut off text */
+  background: linear-gradient(
+    to right,
+    #000000,
+    transparent
+  ); /* Gradient to cut off text */
   z-index: 1;
 }
 
 .ticker-container::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
   width: 50px; /* Adjust the width of the fade effect */
   height: 100%;
-  background: linear-gradient(to left, #000000, transparent); /* Gradient to cut off text */
+  background: linear-gradient(
+    to left,
+    #000000,
+    transparent
+  ); /* Gradient to cut off text */
   z-index: 1;
 }
-
 
 .card-img-top {
   height: 40vh;
@@ -124,6 +131,7 @@ body {
 }
 /* Owl slider nav end */
 
+/* Banner */
 .masthead {
   height: 25vh;
   min-height: 15.62em;
@@ -132,6 +140,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+/* Banner End*/
 
 #btn-back-to-top {
   position: fixed;
@@ -183,33 +192,63 @@ p {
 .golden3 {
   -webkit-text-stroke: 0.01em white;
   font-size: 2.5em;
-  text-shadow: 0 3px 20px red, 0 0 20px red, 0 0 10px orange,
-    4px -5px 6px yellow, -4px -10px 10px yellow, 0 -10px 30px yellow;
+  text-shadow: 
+  0 3px 20px red, 
+  0 0 20px red, 
+  0 0 10px orange,
+  4px -5px 6px yellow, 
+  -4px -10px 10px yellow, 
+  0 -10px 30px yellow;
   animation: animate 2s infinite alternate linear;
 }
 
 @keyframes animate {
   0% {
-    text-shadow: 0 3px 20px red, 0 0 20px red, 0 0 10px orange, 0 0 0 yellow,
-      0 0 5px yellow, -2px -5px 5px yellow, 4px -10px 10px yellow;
+    text-shadow: 
+    0 3px 20px red, 
+    0 0 20px red, 0 0 10px orange, 
+    0 0 0 yellow,
+    0 0 5px yellow, 
+    -2px -5px 5px yellow, 
+    4px -10px 10px yellow;
   }
   25% {
-    text-shadow: 0 3px 20px red, 0 0 30px red, 0 0 20px orange, 0 0 5px yellow,
-      -2px -5px 5px yellow, 3px -10px 10px yellow, -4px -15px 20px yellow;
+    text-shadow: 
+    0 3px 20px red, 
+    0 0 30px red, 0 0 20px orange, 
+    0 0 5px yellow,
+    -2px -5px 5px yellow, 
+    3px -10px 10px yellow, 
+    -4px -15px 20px yellow;
   }
   50% {
-    text-shadow: 0 3px 20px red, 0 0 20px red, 0 -5px 10px orange,
-      -2px -5px 5px yellow, 3 -10px 10px yellow, -4px -15px 20px yellow,
-      2px -20px 30px rgba(255, 255, 0, 0.5);
+    text-shadow: 
+    0 3px 20px red, 
+    0 0 20px red, 
+    0 -5px 10px orange,
+    -2px -5px 5px yellow, 
+    3 -10px 10px yellow, 
+    -4px -15px 20px yellow,
+    2px -20px 30px rgba(255, 255, 0, 0.5);
   }
   75% {
-    text-shadow: 0 3px 20px red, 0 0 20px red, 0 -5px 10px orange,
-      3 -5px 5px yellow, -4px -10px 10px yellow,
-      2px -20px 30px rgba(255, 255, 0, 0.5), 0 -25px 40px rgba(255, 255, 0, 0);
+    text-shadow: 
+    0 3px 20px red, 
+    0 0 20px red, 
+    0 -5px 10px orange,
+    3 -5px 5px yellow, 
+    -4px -10px 10px yellow,
+    2px -20px 30px rgba(255, 255, 0, 0.5), 0 -25px 40px rgba(255, 255, 0, 0);
   }
   100% {
-    text-shadow: 0 3px 20px red, 0 0 20px red, 0 0 10px orange, 0 0 0 yellow,
-      0 0 5px yellow, -2px -5px 5px yellow, 4px -10px 10px yellow;
+    text-shadow: 
+    0 3px 20px red, 
+    0 0 20px red, 
+    0 0 10px orange, 
+    0 0 0 yellow,
+    0 0 5px yellow, 
+    -2px -5px 5px yellow, 
+    4px -10px 10px yellow;
   }
 }
 

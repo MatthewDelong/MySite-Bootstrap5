@@ -58,6 +58,7 @@ body {
 }
 /* Owl slider nav end */
 
+/* Banner */
 .masthead {
   height: 25vh;
   min-height: 250px;
@@ -66,6 +67,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+/* Banner End*/
 
 #btn-back-to-top {
   position: fixed;
