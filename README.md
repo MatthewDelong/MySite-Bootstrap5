@@ -36,9 +36,9 @@ For **transition effects** click [here](https://animate.style/)
 
 ---
 
-**PC Browser** 
+**PC Browser (Screenshot Only:- Text Doesn't show on the ticker)** 
 
-![matthews-world-2025-02-26](https://github.com/user-attachments/assets/9ad40e83-4cfc-4477-8086-afb625f7f6c2)
+![Site-Home](https://github.com/user-attachments/assets/a3ba67e6-d046-4579-9587-625f84330357)
 
 ![Site-Weather](https://github.com/user-attachments/assets/9672393a-c37d-496c-bfbd-7df0d214c02c)
 
